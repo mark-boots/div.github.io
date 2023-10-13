@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
-const loc = urlParams.get('loc') || "";
+const loc = (urlParams.get('loc') || "").replace(/\s/g, " ");
 const off = Number(urlParams.get('utc') || 0);   
 const output = document.querySelector("#output");
 
