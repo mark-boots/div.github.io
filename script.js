@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const loc = (urlParams.get('loc') || "").replace("_", " ");
-const off = Number(urlParams.get('utc') || 0);   
+const off = Number(urlParams.get('utc') || 0);
 const output = document.querySelector("#output");
 
 calcTime()
