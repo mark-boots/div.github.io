@@ -4,37 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
-<style>
-    body {
-        font-family: system-ui, sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #283a85;
-        font-size: 2rem;
-        padding: 2rem;
-    }
-</style>
-
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js"></script>
 </head>
 <body>
     <div id="output"></div>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const loc = urlParams.get('loc') || "";
-        const off = Number(urlParams.get('utc') || 0);   
-        const output = document.querySelector("#output");
-        
-        calcTime()
-        function calcTime() {
-            const d = new Date();
-            const utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-            const nd = new Date(utc + (3600000 * off));
-            const timeString = nd.toLocaleString([], { hour: "2-digit", minute: "2-digit"});
-            output.innerText = (loc !== "" ? loc + ": " : "") + timeString
-            
-            setTimeout(calcTime,1000)
-        }
-    </script>
 </body>
 
 </html>
