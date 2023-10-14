@@ -1,8 +1,27 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font: inherit}
 body {
     font-family: system-ui, sans-serif;
-    font-weight: bold;
-    color: var(--text);
-    background-color: var(--bg);
-    font-size: 2rem;
     padding: 2rem;
+    background-color: var(--output-background-color)
+}
+
+#output {
+    margin-bottom: 5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--output-text-color)
+}
+
+.settings{
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 0.5rem 1rem;
+    font-family: system-ui, sans-serif;
+    
+}
+.settings > * {
+    font: inherit
 }
