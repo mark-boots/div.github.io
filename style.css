@@ -7,12 +7,19 @@ body {
 
 #output {
     margin-bottom: 5rem;
-    font-weight: bold;
-    font-size: 2rem;
+    
     color: var(--output-text-color)
+}
+#output > .title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+#output > .time{
+    font-size: 1.5rem;
 }
 
 .settings{
+    width: max-content;
     padding: 1rem;
     background-color: white;
     color: black;
