@@ -1,7 +1,8 @@
 body {
     font-family: system-ui, sans-serif;
     font-weight: bold;
-    color: #283a85;
+    color: var(--text);
+    background-color: var(--bg);
     font-size: 2rem;
     padding: 2rem;
 }
