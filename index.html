@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Local Time</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+
 </head>
 <body>
     <div id="output">
@@ -18,19 +24,19 @@
 
     <div class="settings">
         <label for="input-title">Title</label>
-        <input type="text" id="input-title" value="LIVE in Gaza">
+        <input type="text" id="input-title" name="input-title" value="LIVE in Gaza">
         
         <label for="input-time-text">Time text</label>
-        <input type="text" id="input-time-text" value="Local Time:">
+        <input type="text" id="input-time-text" name="input-time-text" value="Local Time:">
 
         <label for="input-utc-offset">UTC offset</label>
-        <input type="text" id="input-utc-offset" value="3">
+        <input type="text" id="input-utc-offset" name="input-utc-offset" value="3">
 
         <label for="input-text-color">Text color</label>
-        <input type="color" id="input-text-color" value="#000000">
+        <input type="color" id="input-text-color" name="input-text-color" value="#000000">
         
         <label for="input-background-color">Background color</label>
-        <input type="color" id="input-background-color" value="#FFFFFF">
+        <input type="color" id="input-background-color" name="input-background-color" value="#FFFFFF">
     </div>
 </body>
 </html>

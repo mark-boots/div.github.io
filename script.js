@@ -11,11 +11,11 @@ const inputTextColor = document.querySelector("#input-text-color");
 const inputBackgroundColor = document.querySelector("#input-background-color");
 
 
-inputTitle.addEventListener("keyup", updateOptions);
-inputTimeText.addEventListener("keyup", updateOptions);
-inputUTCoffset.addEventListener("keyup", updateOptions);
-inputTextColor.addEventListener("change", updateOptions);
-inputBackgroundColor.addEventListener("change", updateOptions);
+inputTitle.addEventListener("input", updateOptions);
+inputTimeText.addEventListener("input", updateOptions);
+inputUTCoffset.addEventListener("input", updateOptions);
+inputTextColor.addEventListener("input", updateOptions);
+inputBackgroundColor.addEventListener("input", updateOptions);
 
 
 getLocalStorage()
