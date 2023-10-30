@@ -4,10 +4,9 @@ body {
     padding: 2rem;
     background-color: var(--output-background-color)
 }
-
 #output {
     margin-bottom: 5rem;
-    
+    width: max-content;
     color: var(--output-text-color)
 }
 #output > .title{
@@ -17,18 +16,21 @@ body {
 #output > .time{
     font-size: 2rem;
     font-weight: bold;
+    /* text-align: right; */
 }
 
 .settings{
-    width: max-content;
+    width: 100%;
     padding: 1rem;
     background-color: white;
     color: black;
     display: grid;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: max-content 1fr;
     gap: 0.5rem 1rem;
     font-family: system-ui, sans-serif;
     
+}
+
 }
 .settings > * {
     font: inherit;
