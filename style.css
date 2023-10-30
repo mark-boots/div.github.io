@@ -17,11 +17,13 @@ body {
 }
 #output > .live {
     padding-top: 1rem;
+    padding-bottom: 0.25rem;
     background-color: var(--liveBackgroundColor, red);
     color: var(--liveTextColor, white);
 }
 #output > .time{
     padding-top: 1rem;
+    padding-bottom: 0.25rem;
     color: var(--timeTextColor, white);
     background-color: var(--timeBackgroundColor, black);
 }
