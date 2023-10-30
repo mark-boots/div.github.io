@@ -51,8 +51,11 @@ input[type="text"], textarea{
 }
 .settings{
     display: grid;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: repeat(4, max-content);
     gap: 0.5rem 1rem;
+}
+textarea {
+    grid-column: 2 / -1;
 }
 table{
     margin-top: 1rem;
