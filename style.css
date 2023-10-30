@@ -22,12 +22,10 @@ body {
 }
 #output > .time{
     padding-top: 1rem;
-    padding-bottom: 0.5rem;
     color: var(--timeTextColor, white);
     background-color: var(--timeBackgroundColor, black);
 }
 #output > .title{
-    padding-top: 0.5rem;
     padding-bottom: 1rem;
     grid-column: span 2;
     color: var(--titleTextColor, red);
