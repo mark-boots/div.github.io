@@ -15,28 +15,48 @@
 </head>
 <body>
     <div id="output">
-        <div class="title" id="output-title">LIVE from Gaza</div>
+        <div class="live">LIVE</div>
         <div class="time">
             <span id="output-time-text">Local Time:</span>
             <span id="output-time"></span>
         </div>
+        <div class="title" id="output-title">LIVE from Gaza</div>
+        
     </div>
 
+    <section>
     <div class="settings">
         <label for="input-title">Title</label>
-        <!-- <input type="text" id="input-title" name="input-title" value="LIVE in Gaza"> -->
-        <textarea name="" id="input-title" name="input-title" value="LIVE in Gaza" rows="3"></textarea>
+        <textarea name="" id="input-title" name="input-title" value="LIVE in Gaza" rows="3">View over Israel-Gaza Border
+(from Israel)</textarea>
         <label for="input-time-text" >Time text</label>
         <input type="text" id="input-time-text" name="input-time-text" value="Local Time:">
 
         <label for="input-utc-offset">UTC offset</label>
-        <input type="text" id="input-utc-offset" name="input-utc-offset" value="3">
-
-        <label for="input-text-color">Text color</label>
-        <input type="color" id="input-text-color" name="input-text-color" value="#000000">
-        
-        <label for="input-background-color">Background color</label>
-        <input type="color" id="input-background-color" name="input-background-color" value="#FFFFFF">
+        <input type="text" id="input-utc-offset" name="input-utc-offset" value="2">
     </div>
+    <table>
+        <tr>
+            <th style="font-weight: bold;">Colors</th>
+            <th>Text</th>
+            <th>Background</th>
+        </tr>
+        <tr>
+            <th>LIVE</th>
+            <td><input type="color" name="live-text-color" id="live-text-color" value="#ffffff"></td>
+            <td><input type="color" name="live-background-color" id="live-background-color" value="#ff0000"></td>
+        </tr>
+        <tr>
+            <th>TIME</th>
+            <td><input type="color" name="time-text-color" id="time-text-color" value="#ffffff"></td>
+            <td><input type="color" name="time-background-color" id="time-background-color" value="#000000"></td>
+        </tr>
+        <tr>
+            <th>TITLE</th>
+            <td><input type="color" name="title-text-color" id="title-text-color" value="#ff0000"></td>
+            <td><input type="color" name="title-background-color" id="title-background-color" value="#ffffff"></td>
+        </tr>
+    </table>
+</section>
 </body>
 </html>

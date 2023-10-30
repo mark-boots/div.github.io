@@ -1,37 +1,59 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font: inherit}
 body {
     font-family: system-ui, sans-serif;
-    padding: 2rem;
-    background-color: var(--output-background-color)
+    background-color: var(--titleBackgroundColor, white);
 }
 #output {
+    display: grid;
+    grid-template-columns: max-content 1fr;
     margin-bottom: 5rem;
-    width: max-content;
-    color: var(--output-text-color)
-}
-#output > .title{
+    color: var(--output-text-color);
     font-size: 2rem;
     font-weight: bold;
+}
+
+#output > * {
+    padding-inline: 1rem;;
+}
+#output > .live {
+    padding-top: 1rem;
+    background-color: var(--liveBackgroundColor, red);
+    color: var(--liveTextColor, white);
 }
 #output > .time{
-    font-size: 2rem;
-    font-weight: bold;
-    /* text-align: right; */
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    color: var(--timeTextColor, white);
+    background-color: var(--timeBackgroundColor, black);
+}
+#output > .title{
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    grid-column: span 2;
+    color: var(--titleTextColor, red);
+}
+
+section{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    font-family: system-ui, sans-serif;
 }
 
 .settings{
-    width: 100%;
-    padding: 1rem;
-    background-color: white;
-    color: black;
     display: grid;
     grid-template-columns: max-content 1fr;
     gap: 0.5rem 1rem;
-    font-family: system-ui, sans-serif;
-    
+}
+table{
+    margin-top: 1rem;
+    text-align: center;
+}
+td, th{
+    text-align: left;
+    padding: 0.5rem 1rem;
 }
 
-}
 .settings > * {
     font: inherit;
 }
