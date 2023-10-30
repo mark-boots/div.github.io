@@ -52,7 +52,7 @@ function calcTime() {
     const d = new Date();
     const utc = d.getTime() + (d.getTimezoneOffset() * 60000);
     const nd = new Date(utc + (3600000 * utcOffset));
-    const timeString = nd.toLocaleString([], { hour: "numeric", minute: "2-digit"});
+    const timeString = nd.toLocaleString([], { hour: "numeric", minute: "2-digit", second: "2-digit"});
     outputTimeEl.innerText = timeString
     
     setTimeout(calcTime,1000)
