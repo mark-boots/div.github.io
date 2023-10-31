@@ -85,5 +85,5 @@ function calcTime() {
     const timeString = nd.toLocaleString([], { hour: "numeric", minute: "2-digit", second: "2-digit"});
     outputTimeEl.innerText = timeString
     
-    setTimeout(calcTime,1000)
+    setTimeout(calcTime,100)
 }
