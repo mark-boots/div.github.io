@@ -77,9 +77,7 @@ function updateOptions(e){
     document.body.style.setProperty("--titleTextColor", titleTextColor.value)
     document.body.style.setProperty("--titleBackgroundColor", titleBackgroundColor.value)
 }
-console.log({
-    test: moment().format("h:mm:ss a")
-})
+
 function calcTime() {
     const time = moment().utcOffset(utcOffset * 60).format("h:mm:ss a");
     outputTimeEl.innerText = time.toUpperCase();
