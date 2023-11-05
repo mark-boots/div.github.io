@@ -13,22 +13,22 @@ body {
 }
 
 #output > * {
-    padding-inline: 1rem;;
+    padding-inline: 1rem;
 }
 #output > .live {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     background-color: var(--liveBackgroundColor, red);
     color: var(--liveTextColor, white);
 }
 #output > .time{
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     color: var(--timeTextColor, white);
     background-color: var(--timeBackgroundColor, black);
 }
 #output > .title{
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     grid-column: span 2;
     color: var(--titleTextColor, red);
 }

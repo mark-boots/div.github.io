@@ -1,3 +1,4 @@
+
 let utcOffset = 0;
 
 const outputTitleEl = document.querySelector("#output-title");
@@ -30,7 +31,6 @@ const titleBackgroundColor = document.querySelector("#title-background-color");
     titleTextColor, 
     titleBackgroundColor
 ].forEach(el => {
-    console.log(el);
     el.addEventListener("input", updateOptions);
 })
 
@@ -77,13 +77,12 @@ function updateOptions(e){
     document.body.style.setProperty("--titleTextColor", titleTextColor.value)
     document.body.style.setProperty("--titleBackgroundColor", titleBackgroundColor.value)
 }
-
+console.log({
+    test: moment().format("h:mm:ss a")
+})
 function calcTime() {
-    const d = new Date();
-    const utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-    const nd = new Date(utc + (3600000 * utcOffset));
-    const timeString = nd.toLocaleString([], { hour: "numeric", minute: "2-digit", second: "2-digit"});
-    outputTimeEl.innerText = timeString
-    
+    const time = moment().utcOffset(utcOffset * 60).format("h:mm:ss a");
+    outputTimeEl.innerText = time.toUpperCase();
+
     setTimeout(calcTime,100)
 }
